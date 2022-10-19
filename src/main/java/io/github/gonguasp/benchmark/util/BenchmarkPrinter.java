@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class BenchmarkPrinter {
 
-  private static Map<String, Map<String, Object>> summaryStatistics = new HashMap<>();
+  private static Map<String, Map<String, Object>> summaryStatistics = new ConcurrentHashMap<>();
 
   private final static String MAX = "max";
   private final static String MIN = "min";
